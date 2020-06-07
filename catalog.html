@@ -38,7 +38,7 @@
     </div>
 
     <div>
-        <p>Личный кабинет</p>
+        <p class="visually-hidden">Личный кабинет</p>
         <a href="blank.html">Равшан Джамшутович</a>
         <a href="blank.html">/выход/</a>
         <a href="blank.html">Мои заказы</a>
@@ -56,20 +56,84 @@
     <h1>ПЕРФОРАТОРЫ</h1>
 
     <section>
-        <h2>Фильтр</h2>
-        <!--        здесь будет фильтр товаров, формы мы еще не проходили        -->
-
-        <button type="button">ПОКАЗАТЬ</button>
+        <h2>Фильтр:</h2>
+        <form action="https://echo.htmlacademy.ru" method="get">
+            <fieldset>
+                <legend>Цена:</legend>
+                <div>
+                    Двусторонний range
+                </div>
+                <div>
+                    <label for="filter-price-low" class="visually-hidden">Минимальная цена</label>
+                    <input type="number" name="filter-price-low" id="filter-price-low" value="0">
+                </div>
+                <p>-</p>
+                <div>
+                    <label for="filter-price-high" class="visually-hidden">Максимальная цена</label>
+                    <input type="number" name="filter-price-high" id="filter-price-high" value="30000">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Производители:</legend>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="filter-bosch" id="filter-bosch" checked>
+                        <label for="filter-bosch">bosch</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="filter-interskol" id="filter-interskol">
+                        <label for="filter-interskol">interskol</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="filter-makita" id="filter-makita" checked>
+                        <label for="filter-makita">makita</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="filter-dewalt" id="filter-dewalt">
+                        <label for="filter-dewalt">dewalt</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="filter-hitachi" id="filter-hitachi">
+                        <label for="filter-hitachi">hitachi</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Питание:</legend>
+                <ul>
+                    <li>
+                        <input type="radio" name="filter-power" value="battery" id="filter-power-battery" checked>
+                        <label for="filter-power-battery">аккумуляторные</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="filter-power" value="ac" id="filter-power-ac">
+                        <label for="filter-power-ac">сетевые</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <button type="submit">Показать</button>
+        </form>
     </section>
 
     <section>
-        <h2>Сортировка</h2>
-        <!--        здесь будет сортировка-->
-
+        <h2>Сортировка:</h2>
+        <ul>
+            <li>
+                <p>по цене</p>
+            </li>
+            <li>
+                <p>по типу</p>
+            </li>
+            <li>
+                <p>по функционалу</p>
+            </li>
+        </ul>
+        <button type="button"><img src="img/icon-up-dir.svg" alt="По возрастанию" width="11" height="10"></button>
+        <button type="button"><img src="img/icon-down-dir.svg" alt="По убыванию" width="11" height="10"></button>
     </section>
 
     <section>
-        <h2>Список перфораторов</h2>
+        <h2 class="visually-hidden">Список перфораторов</h2>
 
         <ul>
             <li>
@@ -159,7 +223,8 @@
                         <button type="button">25500 Р.</button>
                     </p>
                 </a>
-            </li>            <li>
+            </li>
+            <li>
                 <a href="blank.html">
                     <h3>Перфоратор BOSCH<br>BFG 3000</h3>
                     <p>
@@ -252,7 +317,7 @@
         Все права защищены</p>
 
     <section>
-        <h2>Давайте дружить!</h2>
+        <h2 class="visually-hidden">Давайте дружить!</h2>
         <ul>
             <li>
                 <a href="#"><img src="img/icon-vk.svg" alt="Вконтакте" width="26" height="15"></a>
@@ -277,8 +342,12 @@
 </footer>
 
 <section>
-    <h2>Добавлено в корзину</h2>
-    <button type="button">Показать</button>
+    <h2 class="visually-hidden">Добавлено в корзину</h2>
+    <img src="img/icon-mark.svg" alt="" width="66" height="66">
+    <p>Товар добавлен в корзину!</p>
+    <a href="blank.html">Оформить заказ</a>
+    <button type="button">Продолжить покупки</button>
+    <button type="button">Закрыть</button>
 </section>
 
 </body>

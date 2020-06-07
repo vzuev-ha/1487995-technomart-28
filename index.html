@@ -38,17 +38,18 @@
     </div>
 
     <div>
-        <p>Вход в личный кабинет</p>
+        <p class="visually-hidden">Вход в личный кабинет</p>
         <a href="blank.html">Войти</a>
         <a href="blank.html">Регистрация</a>
     </div>
 </header>
 
 <main>
-    <h1>Техномарт</h1>
+    <h1 class="visually-hidden">Техномарт</h1>
 
     <section>
-        <h2>Каталог</h2>
+        <h2 class="visually-hidden">Каталог</h2>
+<!--        Пока не изучил сетки, не делаю тут ничего -->
 
         <img src="img/slide-hammerdrills.jpg" width="620" height="266" alt="Перфораторы. Настоящие мужские игрушки.">
         <img src="img/slide-drills.jpg" width="620" height="266" alt="Дрели. Соседям на радость!">
@@ -124,7 +125,7 @@
     </section>
 
     <section>
-        <h2>О компании</h2>
+        <h2 class="visually-hidden">О компании</h2>
         <p>КОМПАНИЯ «ТЕХНОМАРТ»</p>
         <p>
             Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
@@ -181,7 +182,7 @@
         Все права защищены</p>
 
     <section>
-        <h2>Давайте дружить!</h2>
+        <h2 class="visually-hidden">Давайте дружить!</h2>
         <ul>
             <li>
                 <a href="#"><img src="img/icon-vk.svg" alt="Вконтакте" width="26" height="15"></a>
@@ -206,20 +207,39 @@
 </footer>
 
 <section>
-    <h2>Заблудились?..</h2>
-    <!-- Здесь будет форма обратной связи -->
+    <h2 class="visually-hidden">Заблудились?..</h2>
+    <form action="https://echo.htmlacademy.ru" method="post">
+        <div>
+            <label for="input-user-name"></label>
+            <input type="text" id="input-user-name" name="user-name" placeholder="Имя Фамилия">
+        </div>
+        <div>
+            <label for="input-user-email"></label>
+            <input type="email" id="input-user-email" name="user-email" placeholder="email@example.com">
+        </div>
+        <div>
+            <label for="input-user-text"></label>
+            <textarea name="user-text" id="input-user-text" rows="6">В свободной форме</textarea>
+        </div>
+        <button type="submit">ОТПРАВИТЬ</button>
+    </form>
     <button type="button">Закрыть</button>
 </section>
 
 <section>
-    <h2>Как до нас добраться</h2>
+    <h2 class="visually-hidden">Как до нас добраться</h2>
     <!-- Здесь будет карта -->
+    <img src="img/map-big.png" alt="Карта проезда" width="970" height="477">
     <button type="button">Закрыть</button>
 </section>
 
 <section>
-    <h2>Добавлено в корзину</h2>
-    <button type="button">Показать</button>
+    <h2 class="visually-hidden">Добавлено в корзину</h2>
+    <img src="img/icon-mark.svg" alt="" width="66" height="66">
+    <p>Товар добавлен в корзину!</p>
+    <a href="blank.html">Оформить заказ</a>
+    <button type="button">Продолжить покупки</button>
+    <button type="button">Закрыть</button>
 </section>
 
 </body>
